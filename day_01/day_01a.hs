@@ -8,8 +8,8 @@ numbers = [1721, 979, 366, 299, 675, 1456]
 splitl :: Char -> String -> String -> [String]
 splitl _ [] _ = []
 splitl d (x:xs) r
-    | x /= d && (length xs /= 0) = splitl d xs (r ++ [x])
     | length xs == 0 = (r ++ [x]) : (splitl d xs [])
+    | x /= d = splitl d xs (r ++ [x])
     | otherwise = r : (splitl d xs [])
 
 -- replace :: Char -> Char -> String -> String
