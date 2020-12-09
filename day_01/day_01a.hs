@@ -22,7 +22,7 @@ split d x = splitl d x []
 f :: Integer -> [Integer] -> [Integer]
 f n a = filter (\x -> length (filter (\y -> x + y == n) (a \\ [x])) == 1) a
 
-main = do x <- readFile "input"
+main = do x <- readFile "inputa"
           print $ foldl (*) 1 (f 2020 (map readInteger (split '\n' x)))
 
 readInteger :: String -> Integer
