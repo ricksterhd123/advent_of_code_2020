@@ -1,6 +1,3 @@
-# decided to use python because it is quicker...
-
-import os
 import re
 
 def list_policies(path):
