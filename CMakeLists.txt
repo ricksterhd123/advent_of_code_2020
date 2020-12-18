@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.10)
 project(aoc C)
 
 # add the executable
-add_executable(aoc day_01.c)
+add_executable(aoc day_02.c)

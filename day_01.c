@@ -25,6 +25,7 @@ int to_number(char* num_str, int* num)
 /**
  * This function took me days to debug and it finally works...
  * I hate the fact that I implemented this in Haskell within less than an hour...
+ * As i'm writing this I also realised that sscanf existed F
  */ 
 void read_numbers_from_file(char* path, int** result, int* numbers_sz)
 {
@@ -95,7 +96,7 @@ int main()
 
     read_numbers_from_file("day_01.txt", &nums, &size);
     assert(nums);
-    
+
     for (int x = 0; x < size; x++)
     {
         for (int y = 0; y < size; y++)
